@@ -59,7 +59,7 @@
 
 (node
   (identifier 11)
-  (content "Does it has a fork like tail?")
+  (content "Does it has a fork like tail? (1-Yes 2-No)")
   (children 14 15)
 )
 
