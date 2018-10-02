@@ -1,4 +1,4 @@
-(load "./template.clp")
+(load "./templates.clp")
 (load-facts "./facts.clp")
 (load "./decisionTree.clp")
 
