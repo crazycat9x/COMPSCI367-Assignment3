@@ -8,13 +8,14 @@
   ?node <- (current-node ?id)
   (node
     (identifier ?id)
-    (node-type ?type)
     (content ?message)
     (children $?children)
   )
   => 
-    (if (eq ?type question)
+    (if (= (length$ $?children) 0)
       then
+        (printout t ?message crlf)
+      else
         (printout t ?message ":" crlf)
         (bind ?input (read))
         (while 
@@ -28,7 +29,5 @@
         (bind ?next (nth$ ?input $?children))
         (retract ?node)
         (assert (current-node ?next))
-      else
-        (printout t ?message crlf)
     )
 )
