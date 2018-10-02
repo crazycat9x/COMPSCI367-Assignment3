@@ -1,4 +1,4 @@
-(defrule initialize
+(defrule on-program-start
   (not (current-node ?))
   => 
     (printout
@@ -13,7 +13,7 @@
   )
 )
 
-(defrule process
+(defrule program-has-not-ended
   ?node <- (current-node ?id)
   (node
     (identifier ?id)
@@ -35,6 +35,7 @@
         (bind ?control (read))
         (if (eq ?control r)
           then (retract ?node)
+          else (exit)
         )
       else
         (printout t ?message ":" crlf)
@@ -43,7 +44,7 @@
           (or
             (not (integerp ?input))
             (eq (nth$ ?input $?children) nil)
-          )
+          ) do
             (printout t ?message ":" crlf)
             (bind ?input (read))
         )
