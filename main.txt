@@ -1,0 +1,7 @@
+(load "./template.clp")
+(load-facts "./facts.clp")
+(load "./decisionTree.clp")
+
+(assert(current-node 1))
+
+(run)
