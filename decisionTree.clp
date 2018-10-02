@@ -1,6 +1,15 @@
 (defrule initialize
   (not (current-node ?))
-  => (assert (current-node 1)
+  => 
+    (printout
+        t crlf
+        "################################################" crlf
+        "## I'll diagnose your aquarium fishes for you ##" crlf
+        "## Just follow the provided instruction       ##" crlf
+        "################################################" crlf
+        crlf
+    )
+    (assert (current-node 1)
   )
 )
 
@@ -14,7 +23,19 @@
   => 
     (if (= (length$ $?children) 0)
       then
-        (printout t ?message crlf)
+        (printout
+          t crlf
+          "I have diagnosed your fishes with:" crlf
+          ?message crlf
+          crlf
+          "Enter the following keys to:" crlf
+          "r: restart" crlf
+          "any other keys: exit" crlf
+        )
+        (bind ?control (read))
+        (if (eq ?control r)
+          then (retract ?node)
+        )
       else
         (printout t ?message ":" crlf)
         (bind ?input (read))
