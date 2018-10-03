@@ -90,7 +90,7 @@
 
   (node
       (identifier 2)
-      (content "Physical contact wound? (1-Yes 2-No)")
+      (content "Does the wound appear to be caused by physical impact? (1-Yes 2-No)")
       (children 7 8)
   )
 
@@ -121,13 +121,13 @@
 
   (node
     (identifier 8)
-    (content "Are there open sore with red edges? (1-Yes 2-No)")
+    (content "Are there open sores with red edges? (1-Yes 2-No)")
     (children 9 10)
   )
 
   (node
     (identifier 9)
-    (content "Visible worm in wound? (1-Yes 2-No)")
+    (content "Upon inspection with a magnefying glass are there worms inside the wound? (1-Yes 2-No)")
     (children 11 10)
   )
 
@@ -150,7 +150,7 @@
 
   (node
     (identifier 13)
-    (content "Are wound small and round in shape? (1-Yes 2-No)")
+    (content "Are wounds small and round in shape? (1-Yes 2-No)")
     (children 16 4)
   )
 
