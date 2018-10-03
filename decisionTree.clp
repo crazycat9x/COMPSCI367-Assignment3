@@ -24,10 +24,10 @@
         "## |  _|| |/ __|| '_ \\   / _` | / _ \\  / __|| __|/ _ \\ | '__| ##"   crlf
         "## | |  | |\\__ \\| | | | | (_| || (_) || (__ | |_| (_) || |    ##"    crlf
         "## |_|  |_||___/|_| |_|  \\__,_| \\___/  \\___| \\__|\\___/ |_|    ##" crlf
-        "##                                                            ##" crlf
-        "## I'll diagnose your aquarium fishes for you                 ##" crlf
-        "## Just answer the following questions                        ##" crlf
-        "################################################################" crlf
+        "##                                                            ##"      crlf
+        "## I'll diagnose your aquarium fishes for you                 ##"      crlf
+        "## Just answer the following questions                        ##"      crlf
+        "################################################################"      crlf
         crlf
     )
     (assert (current-node 1)
