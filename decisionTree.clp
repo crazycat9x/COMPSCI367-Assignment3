@@ -26,7 +26,7 @@
         crlf crlf
         "################################################" crlf
         "## I'll diagnose your aquarium fishes for you ##" crlf
-        "## Just follow the provided instruction       ##" crlf
+        "## Just answer the following questions        ##" crlf
         "################################################" crlf
         crlf
     )
