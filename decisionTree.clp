@@ -1,9 +1,9 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;   Program: Aquarium fish diagnosis expert system ;;
-;;    Author: Tien Nguyen Khac                      ;;
-;; StudentID: 756505860                             ;;
-;;       UPI: tngu281                               ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Program   : Aquarium fish diagnosis expert system ;;
+;; Author    : Tien Nguyen Khac                      ;;
+;; StudentID : 756505860                             ;;
+;; UPI       : tngu281                               ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (deftemplate node "Decision tree node template"
   (slot identifier (type INTEGER))
