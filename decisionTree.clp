@@ -49,12 +49,12 @@
           "==================================" crlf
           "I have diagnosed your fishes with:" crlf
           "==================================" crlf
-          ?message crlf
+          ?message                             crlf
           crlf
-          "Enter the following keys to:" crlf
-          "----------------------------" crlf
-          "r: restart" crlf
-          "any other keys: exit" crlf
+          "Enter the following keys to:"       crlf
+          "----------------------------"       crlf
+          "r: restart"                         crlf
+          "any other keys: exit"               crlf
         )
         (bind ?control (read))
         (if (eq ?control r)
