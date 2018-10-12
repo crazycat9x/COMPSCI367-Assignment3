@@ -5,6 +5,8 @@
 ;; UPI       : tngu281                               ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; NOTE: Run the program with (load) (reset) (run)
+
 (deftemplate node "Decision tree node template"
   (slot identifier (type INTEGER))
   (slot content (type STRING))
@@ -14,7 +16,6 @@
 (defrule on-program-start "Print welcome & set current node to 1"
   (not (current-node ?))
   => 
-    (reset)
     (printout
         t crlf
         "################################################################"      crlf
