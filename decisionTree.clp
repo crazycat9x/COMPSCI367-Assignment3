@@ -84,13 +84,13 @@
 
   (node
       (identifier 1)
-      (content "Is there an open wound? (1-Yes 2-No)")
+      (content "Are there open wounds? (1-Yes 2-No)")
       (children 2 3)
   )
 
   (node
       (identifier 2)
-      (content "Does the wound appear to be caused by physical impact? (1-Yes 2-No)")
+      (content "Does wounds appear to be caused by physical impact? (1-Yes 2-No)")
       (children 7 8)
   )
 
@@ -99,6 +99,7 @@
       (content "Characteristics? (1-[Red streaks] 2-[Tiny white spots] 3-[Red gills])")
       (children 4 5 6)
   )
+  
   (node
       (identifier 4)
       (content "Bacterial infection")
@@ -127,7 +128,7 @@
 
   (node
     (identifier 9)
-    (content "Upon inspection with a magnefying glass are there worms inside the wound? (1-Yes 2-No)")
+    (content "Upon inspection with a magnefying glass are there worms inside wounds? (1-Yes 2-No)")
     (children 11 10)
   )
 
@@ -139,13 +140,13 @@
 
   (node
     (identifier 11)
-    (content "Does it has a fork like tail? (1-Yes 2-No)")
+    (content "Do they have a fork like tail? (1-Yes 2-No)")
     (children 14 15)
   )
 
   (node
     (identifier 12)
-    (content "Hole in head disease")
+    (content "Holes in head disease")
   )
 
   (node
